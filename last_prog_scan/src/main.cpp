@@ -1,6 +1,7 @@
 #include "RLcd_TIW.h"
 #include "RTimer.h"
 #include "portal.h"
+
 #include "barcode.h"
 #include "button.h"
 #include "menu.h"
@@ -17,8 +18,7 @@ bool startKey = false;
 int key = 0;
 //*******************************************************************
 //*******************************************************************
-Portal Tray;
-Barcode barcode;
+
 
 void moveStepper()
 {
