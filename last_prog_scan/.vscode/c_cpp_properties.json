@@ -1,0 +1,68 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/home/dell/Arduino/scan_last/last_prog_scan/include",
+                "/home/dell/Arduino/scan_last/last_prog_scan/src",
+                "/home/dell/Arduino/scan_last/last_prog_scan/lib/portal",
+                "/home/dell/Arduino/scan_last/last_prog_scan/lib/stepper",
+                "/home/dell/Arduino/scan_last/last_prog_scan/lib/menu",
+                "/home/dell/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "/home/dell/Arduino/scan_last/last_prog_scan/lib/button",
+                "/home/dell/Arduino/scan_last/last_prog_scan/lib/softSerial",
+                "/home/dell/Arduino/scan_last/last_prog_scan/lib/timer",
+                "/home/dell/Arduino/scan_last/last_prog_scan/lib/lcd",
+                "/home/dell/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "/home/dell/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "/home/dell/.platformio/packages/framework-arduino-avr/variants/mega",
+                "/home/dell/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/home/dell/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/dell/Arduino/scan_last/last_prog_scan/include",
+                    "/home/dell/Arduino/scan_last/last_prog_scan/src",
+                    "/home/dell/Arduino/scan_last/last_prog_scan/lib/portal",
+                    "/home/dell/Arduino/scan_last/last_prog_scan/lib/stepper",
+                    "/home/dell/Arduino/scan_last/last_prog_scan/lib/menu",
+                    "/home/dell/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "/home/dell/Arduino/scan_last/last_prog_scan/lib/button",
+                    "/home/dell/Arduino/scan_last/last_prog_scan/lib/softSerial",
+                    "/home/dell/Arduino/scan_last/last_prog_scan/lib/timer",
+                    "/home/dell/Arduino/scan_last/last_prog_scan/lib/lcd",
+                    "/home/dell/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "/home/dell/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "/home/dell/.platformio/packages/framework-arduino-avr/variants/mega",
+                    "/home/dell/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/home/dell/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60106",
+                "ARDUINO_AVR_MEGA2560",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega2560__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/home/dell/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega2560",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

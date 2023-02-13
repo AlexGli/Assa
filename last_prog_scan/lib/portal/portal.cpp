@@ -43,12 +43,19 @@ Portal::Portal()
 void Portal::run_HomePosition(bool state) // портал в поизиции дома
 {
     static bool start = false;
+    static int cntPauseOffBarcode = 0;
     if (state && statePortal() == homePositon) // нажали старт
     {
         start = true;
     }
     if (positionHome)
     {
+        if(cntPauseOffBarcode++ > 2000)
+        {
+            cntPauseOffBarcode = 0;
+            digitalWrite(pinleftBarcode, LOW); // через 200мс выключаем сканеры
+            digitalWrite(pinrightBarcode, LOW);
+        }
         Tstepper.moveTo(0);
         Tstepper.run();
         if (Tstepper.currentPosition() == 0)
@@ -63,8 +70,8 @@ void Portal::run_HomePosition(bool state) // портал в поизиции д
             start = false;
             cnt = 0;
             positionHome = true;
-            digitalWrite(pinleftBarcode, LOW);
-            digitalWrite(pinrightBarcode, LOW);
+            digitalWrite(pinleftBarcode, HIGH);
+            digitalWrite(pinrightBarcode, HIGH);
         }
         switch (cnt)
         {
@@ -109,12 +116,14 @@ void Portal::run_HomePosition(bool state) // портал в поизиции д
 
 int Portal::statePortal()
 {
+    int result = 0;
     if (digitalRead(pinSensorHome))
     {
-        return homePositon;
+        result = homePositon;
     }
     else if (digitalRead(pinSensorStart))
     {
-        return startPosition;
+        result = startPosition;
     }
+    return result;
 }
